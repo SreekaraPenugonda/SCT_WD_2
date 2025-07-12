@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkillCraft Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="loader" id="loader">
+    <h2>⚙️ SkillCraft Technology</h2>
+    <p>Loading Stopwatch...</p>
+  </div>
+
+  <header class="branding">
+    <h1><span class="highlight">SkillCraft</span> Stopwatch</h1>
+    <p>Interactive & Accurate Time Measurement</p>
+  </header>
+
+  <main class="stopwatch-panel tilt-glass">
+    <div class="status-dot" id="statusDot"></div>
+    
+    <!-- ⏱️ Flip Digit Clock Display -->
+    <div class="display flip-clock" id="display"></div>
+
+    <!-- 🛠️ Control Buttons -->
+    <div class="buttons">
+      <button id="startStop">Start</button>
+      <button id="lap">Lap</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <!-- 📋 Lap Times -->
+    <ul class="laps" id="lapList"></ul>
+  </main>
+
+  <!-- 💬 Motivational Quote -->
+  <div id="quoteBox">🏁 “Every second counts.”</div>
+
+  <!-- 🔻 Footer -->
+  <footer>
+    <p>© 2025 SkillCraft Technology</p>
+  </footer>
+
+  <!-- 🎉 Confetti Canvas -->
+  <canvas id="cursor-particles"></canvas>
+  <script src="cursorTrail.js"></script>
+
+
+
+  <!-- 📦 Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
